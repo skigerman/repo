@@ -83,7 +83,7 @@ public class MainActivity extends ActionBarActivity {
 			toast.show();
 		}
 		else{
-			if ( ! Patterns.EMAIL_ADDRESS.matcher(v2).matches()){
+			if ( ! Patterns.EMAIL_ADDRESS.matcher(v1).matches()){
 				// e-mail is invalid
 				Toast toast = Toast.makeText(getApplicationContext(), "E-mail is invalid", Toast.LENGTH_LONG);
 				toast.setGravity(Gravity.TOP, 0, 150);
