@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:key="rate"
+        android:title="Mileage Reimbursement Rate"
+        android:summary="Enter Mileage Reimbursement Rate per Mile"
+        android:dialogTitle="Enter Mileage Reimbursement Rate per Mile"
+        android:singleLine="true"
+        android:maxLength="5"
+        android:inputType="number"
+        />
+    <EditTextPreference
+        android:key="email"
+        android:title="Default E-mail"
+        android:summary="Enter Default E-mail to Send Report"
+        android:dialogTitle="Enter Default E-mail to Send Report"
+        android:singleLine="false"
+        android:maxLength="50"
+        android:inputType="text|textEmailAddress"
+        />
+</PreferenceScreen>

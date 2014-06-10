@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmenttaskdetail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="biz.cssconsulting.TripMileage.TaskDetailFragment" >
+
+    <EditText 
+        android:id="@+id/detailstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tripTitle"
+        android:text="@string/tripTitle" />
+    
+    <TextView
+        android:id="@+id/detailstextdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailstext"
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:text="@string/tripTitle" />
+    
+   
+    <EditText
+        android:id="@+id/detailstext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailstext"
+        android:hint="@string/startMileage"
+        android:text="@string/startMileage" 
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/detailstext2desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailstext"
+        android:layout_toRightOf="@id/detailstext2"
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:text="@string/startMileage" />
+
+    <EditText
+        android:id="@+id/detailstext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailstext2"
+        android:hint="@string/endMileage"
+        android:text="@string/endMileage" 
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/detailstext3desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailstext3"
+        android:layout_below="@id/detailstext2"
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:text="@string/endMileage" />
+
+    <TextView
+        android:id="@+id/detailstext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailstext3"
+        android:text="@string/reimbursement" 
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/detailstext4desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailstext4"
+        android:layout_below="@id/detailstext3"
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:text="@string/reimbursement" />
+    
+    
+     <TextView
+        android:id="@+id/detailstext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date" 
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+    	android:layout_below="@id/detailstext4"
+        android:textStyle="bold"/>
+     
+     <TextView
+        android:id="@+id/detailstext1desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detailstext1"
+        android:layout_below="@id/detailstext4"
+        android:padding="16dp"
+    	android:textIsSelectable="true"
+        android:text="@string/date" />
+    
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailstext1"
+        android:clickable="true"
+        android:text="@string/save" />
+
+</RelativeLayout>
+
